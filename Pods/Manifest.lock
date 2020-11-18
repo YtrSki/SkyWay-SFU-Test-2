@@ -1,0 +1,16 @@
+PODS:
+  - SkyWay (3.0.0)
+
+DEPENDENCIES:
+  - SkyWay
+
+SPEC REPOS:
+  trunk:
+    - SkyWay
+
+SPEC CHECKSUMS:
+  SkyWay: 5540374bcf8bd30f7e0214fd0b30c34ed19a7abd
+
+PODFILE CHECKSUM: 6be83bf41816eb69fdf3d52a2ca1cae0c132d81d
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBq-2C-59I">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="1S5-yk-9AE">
+            <objects>
+                <viewController id="lBq-2C-59I" customClass="TopViewController" customModule="SkyWay_SFU_Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yG7-Gp-eyS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="main" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-NX-Of7">
+                                <rect key="frame" x="20" y="495" width="728" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxb-IG-MNg">
+                                <rect key="frame" x="272" y="537" width="224" height="73"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="9to-Fa-mCg"/>
+                                    <constraint firstAttribute="width" constant="224" id="ITj-nS-atQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="通話画面をひらく">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openTalkScreenAction:" destination="lBq-2C-59I" eventType="touchUpInside" id="PuI-0b-KAJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AwZ-KX-ids"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AwZ-KX-ids" firstAttribute="trailing" secondItem="nxb-IG-MNg" secondAttribute="trailing" constant="272" id="522-OS-XI6"/>
+                            <constraint firstItem="nxb-IG-MNg" firstAttribute="leading" secondItem="AwZ-KX-ids" secondAttribute="leading" constant="272" id="JsZ-0C-bKe"/>
+                            <constraint firstItem="nxb-IG-MNg" firstAttribute="top" secondItem="cXy-NX-Of7" secondAttribute="bottom" constant="8" symbolic="YES" id="Ow0-IA-EBY"/>
+                            <constraint firstItem="cXy-NX-Of7" firstAttribute="leading" secondItem="AwZ-KX-ids" secondAttribute="leading" constant="20" id="WuQ-gl-5rd"/>
+                            <constraint firstItem="cXy-NX-Of7" firstAttribute="top" secondItem="AwZ-KX-ids" secondAttribute="top" constant="495" id="ZeU-Xd-Kxc"/>
+                            <constraint firstItem="AwZ-KX-ids" firstAttribute="trailing" secondItem="cXy-NX-Of7" secondAttribute="trailing" constant="20" id="obg-C1-VBF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="roomNameTextField" destination="cXy-NX-Of7" id="i6M-Cq-dao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmk-NK-Ogp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405.46875" y="-180.46875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

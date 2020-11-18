@@ -1,0 +1,6 @@
+framework module Pods_SkyWay_SFU_Test_2 {
+  umbrella header "Pods-SkyWay SFU Test 2-umbrella.h"
+
+  export *
+  module * { export * }
+}
